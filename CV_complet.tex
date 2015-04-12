@@ -1,0 +1,312 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[activeacute,activegrave,french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+%\setlength{\topmargin}{0mm}
+%\setlength{\headheight}{0mm}
+%\setlength{\headsep}{0mm}
+%\setlength{\textheight}{225mm}
+%\setlength{\oddsidemargin}{0mm}
+%\setlength{\textwidth}{160mm}
+%\usepackage{supertabular}
+
+% Added TRSS
+\usepackage{color}
+\usepackage{verbatim}
+
+\pagestyle{plain}        
+
+\newcommand{\Lustre}{{\tt Lustre}}
+\newcommand{\Lezard}{{\tt Lezard}}
+\newcommand{\Coq}{{\tt Coq}}
+\newcommand{\Ocaml}{{\tt Ocaml}}
+\newcommand{\Modulog}{{\tt Modulog}}
+\newcommand{\Focal}{{\tt Focalize}}
+
+\newcommand{\smallspace}{\vspace{0.25cm}}
+\newcommand{\bigspace}{\vspace{0.5cm}}
+
+
+\title{Curriculum Vitae d\'etaill\'e}
+\author{Philippe  Ayrault}
+%\date{6/12/2010}                  
+
+\begin{document}
+
+\def    \trss#1         {\textcolor{blue}{#1}}
+
+\setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{0}
+
+%-------------------%
+% Debut du document %
+%-------------------%
+\maketitle
+
+
+\section{\'Etat civil}
+\begin{tabular}{l}
+\underline{Nom de famille} : \textsc{AYRAULT} \\
+\underline{Pr\'enoms} : \textsc{Philippe, Andr\'e, Eug\`ene, Simon} \\
+\underline{Nationalit\'e} : \textsc{Fran\c{c}ais}\\
+\underline{Date de naissance} : \textsc{le 20 juillet 1966 \`a
+  Argenteuil (95)} \\
+\underline{Situation de famille} : \textsc{Vie maritale, deux enfants} \\
+\underline{Adresse} : \textsc{43, All\'ee du pont des Beaunes, 91120
+  Palaiseau} \\
+\underline{Mail} : philippe.ayrault@etersafe.com \\
+\underline{T\'el\'ephone} : 01 60 10 71 43 \\
+\underline{Mobile} : 06 86 03 06 25 \\
+
+\end{tabular}
+
+
+\section{R\'esum\'e}
+
+
+\begin{itemize}
+\item Expert Safety ferroviaire, spatial, nucl\'eaire et automobile
+\item Membre du CESTI Thales (Security)
+\item Plus de 20 ans d'exp\'erience
+\item Gestion de projets nationaux et internationaux
+\item Responsable du d\'epartement Safety \`a Thales Syst\`emes
+  Ferroviares Int\'egr\'es
+\item Recherche acad\'emique
+\end{itemize}
+
+\newpage
+\section{Formation initiale}
+
+\underline{DUT Mesures Physiques}, Universit\'e Saint-Denis, Juin 1986.
+
+\smallspace
+\underline{Dipl\^ome d'Ing\'enieur CNAM} en Informatique, Mai 1994.
+\\
+\underline{Sujet} : S\'emantique, Implantation et tests de Modulog.
+\\
+\underline{Jury} :
+\begin{tabular}{lll}
+  Mme V\'eronique Donzeau-Gouge Vigui\'e & CNAM & Pr\'esident  \\
+  Mr Louis Dewez & CNAM & Rapporteur \\
+  Mr Philippe Blot & & Examinateur \\
+  Mr Jean-Fran\c{c}ois Dazy & CNAM & Examinateur \\
+  Mr Jean-Pierre Tramecon & Thomson RGS & Examinateur industriel \\
+\end{tabular}
+
+\smallspace
+\underline{Dipl\^ome d'Etudes Approfondies} Informatique Th\'eorique,
+Calcul et Programmation, Universit\'e Paris 6 (LIP6), Responsable
+J. Sakarovitch, Septembre 1994.
+
+\smallspace
+\underline{Doctorat en Informatique}, Universit\'e Paris 6 (LIP6),
+Avril 2011. 
+\\
+\underline{Sujet} : D\'eveloppement de logiciel critique en \Focal\ -
+M\'ethodologie et outils pour l'\'evaluation de conformit\'e.
+\\
+\underline{Jury} :
+\begin{tabular}{lll}
+  Mme Marie-Laure Potet & VERIMAG & Rapporteur \\
+  Mr Claude Kichner & INRIA & Rapporteur \\
+  Mme Th\'er\`ese Hardin & LIP6 & Directeur \\
+  Mr Fran\c{c}ois Pessaux & & Directeur \\
+  Mme V\'eronique Vigui\'e Donzeau-Gouge & CNAM & Examinateur \\
+  Mr Christian Queinnec & LIP6 & Examinateur \\
+  Mr Pierre-Etienne Moreau & LORIA & Examinateur \\
+  Mr Richard Imhoff & Thales Rail Signaling & Invit\'e industriel\\
+\end{tabular}
+
+
+\newpage
+\section{Activit\'es de recherche}
+J'ai commenc\'e mes activit\'es de recherche lors de mon cycle C du
+CNAM. J'ai pris une ann\'ee sabatique pour int\'egrer l'\'equipe de
+Jean-Louis Dewez. J'ai travaill\'e sur le langage \Modulog, un Prolog
+int\'egrant la notion de modules. Le langage a \'et\'e d\'evelopp\'e
+par une succession d'\'etudiants sans r\'eel strat\'egie de tests pour
+s'assurer de la non-regression des fonctionnalit\'es existantes au fur
+et \`a mesure de l'ajout de nouvelles composantes du langage. J'ai
+commenc\'e par d\'efinir la s\'emantique op\'erationnelle
+d\'eclarative du langage \Modulog. Cette s\'emantique constitue la
+base d'une sp\'ecification ex\'ecutable du langage et permet un
+prototypage en Prolog de l'interpr\'eteur \Modulog.  Ensuite, j'ai
+d\'efini un processus de tests syst\'ematiques et automatis\'e du
+langage. J'ai d\'evelopp\'e un outillage int\'egrant le moteur du
+langage afin de permettre de r\'ecup\'erer les sorties des cas de
+tests et les comparer automatiquement \`a des r\'esultats
+pr\'ed\'efinis. \`A partir de la sp\'ecification formalis\'ee du
+langage, j'ai d\'evelopp\'e plus de 1000 cas de tests, permettant
+d'identifier et de corriger environ 350 anomalies. Ce travail m'a
+permis d'int\'egrer des m\'ethodes acquises lors de mes activit\'es
+professionnelles sur un projet acad\'emique \cite{Ing-PAyrault}.
+\\
+Durant mes activit\'es S\^uret\'e de Fonctionnement \`a Surlog, j'ai
+eu besoin de d\'evelopper un outil d'analyse de code sp\'ecifique \`a
+mon m\'etier. Je me suis rapproch\'e de l'\'equipe SPI du LIP6
+dirig\'ee par le Professeur Th\'er\`ese Hardin pour v\'erifier la
+``soundness'' de l'outil d\'evelopp\'e.  Cette collaboration a
+continu\'e sur plusieurs ann\'ees pour aboutir \`a l'encadrement d'une
+th\`ese CIFRE. Le sujet concernait l'analyse des classes
+d'\'equivalence entre composants logiciel. Une classe d'\'equivalence
+repr\'esente l'ensemble des valeurs des entr\'ees d'un composant
+g\'en\'erant le m\^eme comportement en sortie. L'ensemble des classes
+d'\'equivalence d'un composant repr\'esente une partition sur le
+produit cart\'esien des domaines des entr\'ees du composant. Il peut
+\^etre \'egalement interpr\'et\'e comme la sp\'ecification en bo\^ite
+noire du composant. Les classes d'\'equivalence \'etaient
+repr\'esent\'ees par un syst\`eme de contraintes et la r\'esolution
+entre composants \'etait r\'ealis\'ee par un syst\`eme
+d'interpr\'etation abstraite sur les contraintes (artihm\'etique sur
+les intervalles).  La th\`ese a \'et\'e soutenue par Fabrice Parrennes
+en 2002 \cite{Phd-FParrennes}.
+\\
+En 2005, j'ai voulu compl\'eter mon cursus acad\'emique en
+commencant une th\`ese sur 2 aspects du langage \Focal. Ce travail
+\'etait encadr\'e par le Professeur Th\'er\`ese Hardin. Le premier
+aspect concerne la d\'efinition d'un cycle de d\'eveloppement pour
+l'outil \Focal\ et sa conformit\'e aux principales normes de
+S\^uret\'e de Fonctionnement du logiciel \cite{TAP09, TTSS08}. Le
+second aspect concerne la sp\'ecification formelle en \Coq\ du calcul
+de d\'ependance entre Entr\'ees et Sortie d'un composant logiciel
+\'ecrit en \Focal. La preuve de correction de la sp\'ecification a
+\'t\'e r\'ealis\'ee en \Coq\ et un prototype a \'et\'e d\'evelopp\'e
+en \Ocaml. Cette th\`ese a \'t\'e une grande exp\'erience
+personnelle. Elle m'a permis de r\'efl\'echir sur mon m\'etier
+d'\'evaluateur de syst\`emes critiques pilot\'es par du logiciel et de
+tenter de r\'epondre aux besoins th\'eoriques et de formalisation des
+analyses de risques \cite{Phd-PAyrault}.
+\\
+Les travaux de ma th\`ese ont \'et\'e poursuivis par la th\`ese de Vincent
+Benayoun dirig\'ee par Catherine Dubois au CNAM et soutenue en 2012
+\cite{Phd-VBenayoun, SEFM2012}.
+
+\section{Activit\'es d'enseignement}
+\subsection{Parcours "D\'eveloppement de Logiciels S\^urs" - LIP6/CNAM}
+Bla bla bla ...
+
+\subsection{Approche s\'emantique des langages - CNAM}
+Bla bla bla ...
+
+
+\newpage
+\section{Parcours professionnel}
+\subsection{Thales TCS}
+\subsubsection{Head of Department Engineering Safety}
+Bla bla bla...
+
+\subsubsection{Projet RATP Ligne 13}
+Bla bla bla...
+
+\subsubsection{CESTI}
+
+
+
+\subsection{Etersafe SARL}
+\subsubsection{Tramway automatique de Douai}
+Bla bla bla...
+
+\subsubsection{L13}
+Bla bla bla...
+
+
+\subsection{Surlog SA}
+\subsubsection{DomaineFerroviaire}
+\textbf{Alstom} preuve formelle PAI, preuve formelle B (v\'erification
+  de mod\`ele), Analyse de s\'ecurit\'e de syst\`eme CBTC-SOL, de la
+  plateforme de s\'ecurit\'e 2oo3, .... 
+\textbf{RATP} D\'efinition de processus de v\'erification de logiciel
+  d\'evelopp\'e suivant la m\'ethode formelle B, Certification du
+  premier syst\`eme d'enclenchement install\'e à la RATP (PMI),
+  Mini-m\'etro de l'a\'eroport de Paris CdG 
+\textbf{Faiveley} v\'erification de Portes Pali\`eres.  
+
+
+\subsubsection {Auditeur}
+D\'efinition, mise en place de processus de SdF et suivi de
+l'application pour le compte de plusieurs clients... 
+
+\subsubsection{S\'ecurit\'e Informatique}
+Le noyau PolyXen de Bertin S.A.
+
+\subsubsection{Spatial}
+\textbf{Plateforme HYDRA.} La plateforme HYDRA a \'et\'e construite
+\`a l'ESA (Agence Spatiale Europ\'eenne) \`a  Norgvek au Pays-Bas afin
+de r\'ealier les essais de vibrations du satellite Envisat. La
+plateforme  Il n'existait pas de table suffisamment puissance pour
+faire vibrer un satellite de ce poids et de cette dimension. La
+vibration consiste \`a appliquer sur un satellite l'ensemble des
+contraintes physiques subies lors de son d\'ecollage
+(acc\'el\'eration, rotation, vibrations). C'est le dernier test
+environnemental r\'ealis\'e sur le satellite avant son transport sur
+le site de lancement de Kourou. Plusieurs mois avant le lancement du
+satellite, la NASA avait bris\'e un satellite lors des essais en
+vibration, en le faisant vibrer à 20g au lieu de 2g. Ceci provoquera
+la destruction compl\`ete du satellite (cisaillement), des dommages
+financiers cons\'equent. L'ESA nous a donc
+demand\'e de v\'erifier de nveau de s\'ecurit\'e atteint par le
+logiciel de pilotage de la plateforme de vibration HYDRA. 
+
+La plateforme HYDRA est compos\'ee de 8 v\'erins lui permettant de
+d\'eplacer une charge utile jusqu'\'a 23 tonnes selon les 6 axes de
+libert\'e (3 translations et 3 rotations). Des algorithmes complexes
+sont mis en oeuvre pour transformer les demandes selon les 6 axes de
+libert\'e  vers les 8 v\'erins. L'architecture est bas\'ee sur
+un ensemble de processeurs travaillant en parall\`ele. Le travail
+r\'ealis\'e a consist\'e \'a identifier, \'a partir du code source,
+les diff\'erents fl\^ots de donn\'ees et de les comparer aux
+protections existantes (logiciel ou mat\'eriel). Plusieurs anomalies
+ont \'et\'e d\'ecouvertes et corrig\'ees avant la mise en service de
+la plateforme. 
+
+Le satellite Envisat a pass\'e les tests de vibrations avec succ\`es et
+a \'et\'e mis en orbite par Ariane 5 en 2001. Un article a \'et\'e
+publi\'e en  partenariat avec l'ESA lors du colloque DASIA 2001
+\cite{DASIA2001}.
+
+
+\smallspace
+\textbf{ASEPC.} L'Automate de S\'ecurit\'e de l\'Etage Principal
+Cryotechnique (ASEPC) de la fus\'ee Ariane 5 est l'automate
+surveillant le remplissage en Hydrog\`ene Liquide (26 tonnes de LH2)
+et en Oxyg\`ene Liquide (132 tonnes de LOX) des r\'eservoirs
+principaux de la fus\'ee. Ces r\'eservoirs permettent d'alimenter le
+moteur Vulcain du lanceur.  Lors de l'assemblage du lanceur sur la
+plateforme de lancement, il est n\'ecessaire de pr\'e-remplir le
+r\'eservoir principal afin de renforcer la structure du lanceur (le
+poids du lanceur \'etant primordial, la rigidit\'e de la structure est
+assur\'ee par la pression dans les r\'eservoirs). L'assemblage final
+du lanceur et de sa charge utile s'effectue en hanger et dure environ
+2 semaines.  Tout m\'elange des composants des 2 r\'eservoirs avant la
+mise à feu peut mettre en danger les personnes installant la charge
+utile et provoquer un s\'erieux endommagement de la plateforme de
+tir. L'Agence Spacial nous a demand\'e de r\'ealiser un mod\`ele
+formel de l'automate et de prouver des propri\'e\'es de s\'ecurit\'e.
+La mod\'elisation a \'et\'e effectu\'e avec le langage \Lustre\ et la
+preuve des propri\'et\'es de s\'ecurit\'e avec l'outil \Lezard.
+
+\subsubsection{Automobile}
+PSA, 
+
+\subsection{Thomson RGS}
+D\'eveloppement d'un terminal de messagerie s\'ecuris\'e
+inter-arm\'ees. D\'eveloppement et validation sur plateforme de la
+librairie des fonctions de s\'ecurit\'e informatique du terminal :
+\begin{itemize}
+  \item driver Unix pour acc\'eder à la carte de chiffrement.
+  \item chiffrement/d\'echiffrement des messages
+  \item protocole d'authentification du terminal
+  \item effacement s\'ecuris`e des fichiers
+\end{itemize}
+
+\newpage
+\bibliographystyle{plain}
+\bibliography{bibli}
+
+%\end{sloppypar}
+\end{document}
