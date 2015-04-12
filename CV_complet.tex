@@ -2,6 +2,7 @@
 
 \usepackage[activeacute,activegrave,french]{babel}
 \usepackage[T1]{fontenc}
+   
 \usepackage{times}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -16,21 +17,21 @@
 %\usepackage{supertabular}
 
 % Added TRSS
-\usepackage{color}
-\usepackage{verbatim}
-
+%\usepackage{color}
+%\usepackage{verbatim}
+ 
 \pagestyle{plain}        
 
 \newcommand{\Lustre}{{\tt Lustre}}
 \newcommand{\Lezard}{{\tt Lezard}}
 \newcommand{\Coq}{{\tt Coq}}
-\newcommand{\Ocaml}{{\tt Ocaml}}
+\newcommand{\Ocaml}{{\tt Ocaml}} 
 \newcommand{\Modulog}{{\tt Modulog}}
+\newcommand{\Prolog}{{\tt Prolog}}
 \newcommand{\Focal}{{\tt Focalize}}
 
 \newcommand{\smallspace}{\vspace{0.25cm}}
 \newcommand{\bigspace}{\vspace{0.5cm}}
-
 
 \title{Curriculum Vitae d\'etaill\'e}
 \author{Philippe  Ayrault}
@@ -38,10 +39,10 @@
 
 \begin{document}
 
-\def    \trss#1         {\textcolor{blue}{#1}}
+%\def    \trss#1         {\textcolor{blue}{#1}}
 
-\setcounter{secnumdepth}{0}
-\setcounter{tocdepth}{0}
+%\setcounter{secnumdepth}{0}
+%\setcounter{tocdepth}{0}
 
 %-------------------%
 % Debut du document %
@@ -187,11 +188,45 @@ Benayoun dirig\'ee par Catherine Dubois au CNAM et soutenue en 2012
 \cite{Phd-VBenayoun, SEFM2012}.
 
 \section{Activit\'es d'enseignement}
-\subsection{Parcours "D\'eveloppement de Logiciels S\^urs" - LIP6/CNAM}
-Bla bla bla ...
+\hspace{-0.6cm}\underline{Parcours "D\'eveloppement de Logiciels
+  S\^urs" - LIP6/CNAM}
+\\
+Responsable de la valeur ``Tests du logiciel'' de 2000 \`a
+2007.  Les systèmes critiques à logiciel prépondérant doivent 
+assurer la sécurité des personnes ou de l'environnement même en cas 
+de défaillances. Ces défaillances ont différentes sources: erreur de 
+spécification, erreur de conception, anomalies, défaillance du
+matériel supportant le logiciel, défaillance des équipements en
+interface avec le logiciel... L'enseignement de la Sûret\'e de
+Fonctionnement du logiciel n'existait pas au LIP6 malgr\'e la demande
+du march\'e d'avoir des ing\'enieurs form\'es à cette discipline.
+Dans le cadre de ce parcours, j'ai mont\'e la valeur de tests du
+logiciel. Le test repr\'esente au alentour de 50\% du coût de
+d\'eveloppement d'un logiciel critique. Il est de plus soumis à une
+démonstration de couverture par l'ensemble des normes applicables dans
+le domaine. Bas\'e sur mon exp\'erience de v\'erificateur et de
+valideur, la valeur pr\'esentait les objectifs du tests et l'ensemble
+du cycle de tests (tests unitaires, tests d'int\'gration et tests de
+validation) ainsi que les diff\'erentes couvertures associ\'ees.
+\'A la fin de la valeur, les \'etudients \'etait capable de relire
+et/ou de r\'ediger un Plan de Tests pour un logiciel critique et le
+mettre en place.
 
-\subsection{Approche s\'emantique des langages - CNAM}
-Bla bla bla ...
+\smallspace
+\hspace{-0.6cm}\underline{Approche s\'emantique des langages - CNAM}
+\\
+Charg\'e de Travaux Dirig\'es de 1993 \`a 1998. La valeur consistait à
+fournir les outils pour la compr\'ehension d'un langage informatique.
+\`A partir de la logique bool\'eenne, nous pr\'esentions la notion de
+s\'emantique op\'rationnelle. Puis graduellement, nous augmentions la
+complexit\'e des r\`egles pour aboutir \`a l'impl\'ementation en
+\Prolog\ d'un interpr\'eteur \Prolog\ simplifi\'e. L'impl\'ementation
+de cet interpr\'eteur \'etait utilis\'ee comme sujet de Travaux
+Pratiques.  La fin de l'ann\'ee \'etait consacr\'ee \`a une
+introduction \`a la logique de Hoare et \`a la preuve de programme
+simple.
+\\
+Cette valeur \'etait dirig\'ee par Jean-Louis Dewez.
 
 
 \newpage
@@ -209,25 +244,66 @@ Resp. s\'ecurit\'e Projet Ligne 13 (2007-2012) \\
 Bla bla bla...
 
 \subsubsection{Projet RATP Ligne 13}
-En
+En 2007, Thales TCS rach\`ete la branche ferroviaire d'Alcatel et le
+projet RATP Ligne 13 red\'emarre sur une localisation fran\c{c}aise des
+activit\'es. 
 
 \subsubsection{CESTI}
+En 2011, le CESTI de Thales est s\'electionn\'e par l'ANSSI pour
+r\'ealiser l''\'evaluation au niveau EAL7 (le plus \'elev\'e des
+Crit\`eres Communs) de la smart Card de Gemalto. Cette \'evaluation
+consiste \`a montrer que la Machine Virtel (VM) en charge de
+l'isolation entre les applications pr\'esentes sur la carte \'etait
+conformes au Profile de Protection sp\'ecifications (U)SIM Java Card
+Platform.  Les applications s\'ecuritaires pourront coexister, dans
+les cartes certifi\'ees, avec des applications non s\'ecuritaires (ces
+derni\`eres ne seront pas certifi\'ees, mais elles devront n\'eanmoins
+satisfaire aux contraintes impos\'ees par la plateforme).  Pour
+atteindre ce niveau d'\'evaluation, Trusted Labs, le partenaire de
+Gemalto, a d\'evelopp\'e un mod\`ele formel complet de la machine
+virtuel de sa sp\'ecification jusqu'\`a son code. Le langage utilis\'e
+pour ce mod\`ele \'etait \Coq.  J'ai \'et\'e en charge de la
+r\'ealisation de la partie formelle de l'\'evaluation. Il s'agissait
+de v\'erifier la conformit\'e du mod\`ele \`a la sp\'ecification
+JavaCard de SUN Technology ainsi que des propri\'et\'es de s\^uret\'e
+d\'ecrites dans le Profil de Protection. Puis de v\'erifier le
+mod\`ele de raffinement entre les diff\'erents niveaux de conception
+mis en \oe{}uvre (sp\'ecification, conception, conception
+d\'etaill\'ee). Enfin de montrer la conformit\'e du processus de
+formalisation aux contraintes des Crit\`eres Communs et \`a la note
+[ANSSI-CC-NOTE.12] (Note d'application - Mod\'elisation formelle des
+politiques de s\'ecurit\'e d'une cible d'\'evaluation).
+\\
+En 2013, Gemalto et Trusted Labs annoncaient la premi\`ere
+\'evaluation d'un de leur produit au niveau EAL7 par l'ANSSI. Une \'etude
+similaire a \'et\'e ensuite r\'ealis\'e avec les m\^emes partenaires
+sur une carte \`a puce bas\'ee sur le noyau Multos. 
 
 \subsection{Etersafe SARL,  2004 - 2006}
 \hspace{-0.6cm}\underline{Fonctions} : Expert Technique ind\'ependant
 \\
-\subsubsection{Projet Phil\'eas} En 2003, le Syndicat mixte des transports du Douaisis (SMTD)  a opt\'e pour une technologie
-encore inconnue en France pour la r\'ealisation de son nouveau tramway : un
-v\'ehicule sur pneus \`a guidage magn\'etique par le sol. 
-La mise en \oe{}uvre de ce type de tramway semblait plut\^ot ais\'ee par rapport aux syst\`emes classiques de
- tramway avec rails et cat\'enaires.
-Des aimants plac\'es sous la voie, forment un pattern des signaux qui sont lus par le v\'ehicule, au moyen d'un syst\`eme automatique embarqu\'e.  Le guidage magn\'etique et tous les essieux ind\'ependants du v\'ehicule  en font un v\'ehicule monotrace identique au rail.
-La soci\'et\'e n\'eerlandaise APTS (Advanced Public Transport Systems) m'a contact\'e pour auditer la solution technique et mettre en place le processus d'homologation du v\'ehicule. C'\'etait la premi\`ere fois que cette soci\'et\'e d\'eployait un tel syst\`eme en milieu urbain. 
+\subsubsection{Projet Phil\'eas}
+En 2003, le Syndicat Mixte des Transports du Douaisis (SMTD) a opt\'e
+pour une technologie encore inconnue en France pour la r\'ealisation
+de son nouveau tramway : un v\'ehicule sur pneus \`a guidage
+magn\'etique par le sol.  La mise en \oe{}uvre de ce type de tramway
+semblait plut\^ot ais\'ee par rapport aux syst\`emes classiques de
+tramway avec rails et cat\'enaires.  Des aimants plac\'es sous la
+voie, forment un pattern des signaux qui sont lus par le v\'ehicule,
+au moyen d'un syst\`eme automatique embarqu\'e.  Le guidage
+magn\'etique et tous les essieux ind\'ependants du v\'ehicule en font
+un v\'ehicule monotrace identique au rail.  La soci\'et\'e
+n\'eerlandaise APTS (Advanced Public Transport Systems) m'a contact\'e
+pour auditer la solution technique et mettre en place le processus
+d'homologation du v\'ehicule. C'\'etait la premi\`ere fois que cette
+soci\'et\'e d\'eployait un tel syst\`eme en milieu urbain.
 
 Les solutions techniques ...
 
-\subsubsection{L13}
-En 2002, Alcatel Transport Toronto gagne le march\'e de r\'enovation de la Ligne 13 du m\'etro parisien. Il s'agit de d\'eployer une solution \`a base d'un CBTC (Communication Based Train Control).
+\subsubsection{Projet RATP Ligne 13}
+En 2002, Alcatel Transport Toronto gagne le march\'e de r\'enovation
+de la Ligne 13 du m\'etro parisien. Il s'agit de d\'eployer une
+solution \`a base d'un CBTC (Communication Based Train Control).
 
 
 \subsection{Surlog SA, 1994 - 2003}
@@ -351,5 +427,4 @@ librairie des fonctions de s\'ecurit\'e informatique du terminal :
 \bibliographystyle{plain}
 \bibliography{bibli}
 
-%\end{sloppypar}
 \end{document}
