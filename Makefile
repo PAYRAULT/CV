@@ -29,7 +29,7 @@ pdf: $(MAIN).pdf $(PRES).pdf
 pres : $(PRES).pdf
 
 clean:
-	rm -f *.dvi *.eps *.aux *.bbl *.nlo *.nls *.log *.ilg *.blg *.toc
+	rm -f *.dvi *.eps *.aux *.bbl *.nlo *.nls *.log *.ilg *.blg *.toc *.fmt
 	rm -f $(MAIN).pdf $(PRES).pdf
 
 images:
