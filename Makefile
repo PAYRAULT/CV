@@ -20,13 +20,13 @@ BIB_SRC = $(TOPDIR)/bibli.bib
 EPS = 
 MAIN = CV_complet
 PRES = Projet
+LETTRE = lettre
 
 .PHONY: images dot clean
  
 all: pdf
 dvi: $(MAIN).dvi
-pdf: $(MAIN).pdf $(PRES).pdf
-pres : $(PRES).pdf
+pdf: $(MAIN).pdf $(PRES).pdf $(LETTRE).pdf
 
 clean:
 	rm -f *.dvi *.eps *.aux *.bbl *.nlo *.nls *.log *.ilg *.blg *.toc *.fmt
@@ -70,6 +70,10 @@ $(PRES).bbl : $(BIB_SRC)
 	$(PDFLATEX) $(PRES).tex
 	$(BIBTEX) $(PRES)
 	$(PDFLATEX) $(PRES).tex
+
+$(LETTRE).pdf: $(LETTRE).tex default.ins
+	$(PDFLATEX) $(TEX_FLAG) $(LETTRE).tex
+
 
 
 .SUFFIXES: .eps .fig .dvi .pdf
